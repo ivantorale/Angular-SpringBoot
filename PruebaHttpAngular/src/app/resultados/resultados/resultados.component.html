@@ -1,0 +1,26 @@
+<h2 style="margin-left: 10%; color: white;" id="resultados">Resultados</h2>
+<br>
+<div class="row" *ngFor="let filas of resultados;" style="margin-left: 10%; margin-right: 10%; color: white; font-size: 20px; background-color: rgba(255,255,255,0.3); align-items: center; margin-bottom: 20px;">
+  <div class="col-lg-2">
+    <p>{{filas.dia}}</p>
+  </div>
+  <div class="col-lg-1">
+    <p>{{filas.liga}}</p>
+  </div>
+  <div class="col-lg-2">
+    <p style="text-align: right;">{{filas.local}}</p>
+  </div>
+  <div class="col-lg-2" style="text-align: center;">
+    <img src="{{filas.escudolocal}}" height="70px" >
+  </div>
+  <div class="col-lg-1" style="font-size: 50px;">
+    <p>{{filas.resultado}}</p>
+  </div>
+  <div class="col-lg-2" style="text-align: center;">
+    <img src="{{filas.escudovisitante}}" height="70px">
+  </div>
+  <div class="col-lg-2">
+    <p>{{filas.visitante}}</p>
+  </div>
+</div>
+<br>

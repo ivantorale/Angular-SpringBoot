@@ -1,0 +1,31 @@
+<body>
+
+  <section>
+    <!--for demo wrap-->
+    <br>
+    <h1 id="tabla">Jugadores Futbol Club Barcelona</h1>
+    <div class="tbl-header">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <thead>
+          <tr>
+            <th *ngFor="let columna of columnas;">{{columna}}</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+    <div class="tbl-content">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tbody>
+          <tr *ngFor="let filas of tabla;" >
+            <td><img src="{{filas.Foto}}" alt="{{filas.Nombre}}" class="foto"></td>
+            <td style="font-size: 20px;">{{filas.Nombre}}</td>
+            <td style="font-size: 20px;">{{filas.Posicion}}</td>
+            <td style="font-size: 20px;">{{filas.Numero}}</td>
+            <td style="font-size: 20px;">{{filas.Salario}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</body>
